@@ -1,0 +1,555 @@
+.home_page {
+  overflow-x: hidden;
+}
+
+.main_qualities {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  place-items: center;
+  justify-content: center;
+}
+
+.qualities_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qualities_item p {
+  font-size: 12px;
+  width: 100px;
+  color: #616161;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.amenities_home h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.single_amenties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.single_amenties p {
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+}
+
+.main_amenities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: rem;
+}
+
+.icon_image {
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  background: #f3f2ed;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border-radius: 15%;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.icon_image:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+.filter_home img {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-home img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.single_game p {
+  font-weight: 500;
+}
+
+.snooker img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.lounge_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lounge_content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lounge_image img {
+  max-width: 100%;
+}
+.lounge_area h3 {
+  color: #000000;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 700;
+  border-width: 1px;
+}
+
+.all_indoor_games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.br_bot {
+  border: 1px solid #d9d9d9;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single_cook p {
+  font-weight: 500;
+}
+
+.single_cook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* border: 1px solid red; */
+  white-space: wrap;
+  font-size: 12px;
+  color: #616161;
+}
+
+.single_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  color: #616161;
+}
+
+.footer_img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_img img {
+  margin-bottom: 1rem;
+  max-width: 10%;
+}
+
+.indoor_games h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.do_urself h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ouritems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.veg_sq {
+  border: 1px solid #157f40;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ouritems p {
+  font-size: 12px !important;
+}
+.foods_sec_title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #616161;
+  text-align: center;
+}
+
+.circle_v {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  background: #157f40;
+}
+.foods h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.fitness_space h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.lounge_area_ h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.foods p {
+  text-align: center;
+  color: #616161;
+  font-size: 14px;
+}
+.snooker h3 {
+  text-align: center;
+  color: #000000;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.snooker_content {
+  text-align: center;
+  /* width: 400px; */
+  padding: 1rem;
+  font-size: 14px;
+  color: #616161;
+}
+
+.all_cooking-content {
+  text-align: center;
+  /* width: 400px; */
+  padding: 1rem;
+  font-size: 14px;
+  color: #616161;
+}
+
+.all_cooking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.foods_content {
+  text-align: center;
+  /* width: 400px; */
+  padding: 1rem;
+  font-size: 14px;
+  color: #616161;
+}
+
+.fitness_content {
+  text-align: center;
+  /* width: 400px; */
+  padding: 1rem;
+  font-size: 14px;
+  color: #616161;
+}
+
+.lounge_area_content {
+  /* width: 400px; */
+  padding: 1rem;
+  font-size: 14px;
+  color: #616161;
+  text-align: center;
+}
+
+.lounge_content p {
+  text-align: center;
+}
+.lounge_area img {
+  max-width: 100%;
+  /* margin-top: -10rem; */
+  z-index: 2;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-caption {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.view-all {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: red;
+}
+
+.more_ammenties {
+  text-align: center;
+}
+
+.amenitiy p {
+  color: #616161;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.more_ammenties h3 {
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.more_ammenties h6 {
+  color: #616161;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.filter-home p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  position: absolute;
+  bottom: 10px;
+  left: 4%;
+  /* transform: translateY(-120px); */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.home_ad_banner {
+  position: relative;
+}
+
+.banner_container {
+  position: relative;
+}
+
+.banner_image {
+  width: 100%;
+}
+
+.ad_banner_content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 20px;
+}
+
+.ad_banner_content h3,
+.ad_banner_content p {
+  margin: 0;
+}
+
+.ad_banner_content h4 {
+  font-weight: 500;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.ad_banner_content p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+}
+.ad_banner_content button {
+  margin-top: 10px;
+  border-radius: 30px;
+  height: 44px;
+  color: #ff0000;
+  width: 200px;
+  border: none;
+}
+
+.home_ad_banner h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+}
+
+.home_ad_banner p {
+  text-align: center;
+  color: #616161;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .ad_banner_content h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .ad_banner_content p {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .ad_banner_content button {
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 30px;
+    color: #ff0000;
+    max-width: 100%;
+    border: none;
+  }
+
+  .all_cooking {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 0;
+  }
+
+  .lounge_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_image img {
+    width: 100%;
+  }
+
+  .ad_banner_content h4 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .all_indoor_games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    gap: 0;
+  }
+
+  .all_cooking-content p {
+    text-align: justify;
+  }
+
+  .foods_content p {
+    text-align: justify;
+  }
+
+  .lounge_content p {
+    text-align: justify;
+  }
+
+  .snooker_content p {
+    text-align: justify;
+  }
+
+  .add_text {
+    text-align: justify;
+    padding: 1rem;
+  }
+
+  .d_filter_name {
+    display: none;
+  }
+
+  .m_filter_name {
+    all: initial !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+  }
+}
+
+.m_filter_name {
+  display: none;
+}
+
+.slider-controls {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.slider-controls button {
+  border-radius: 50%;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.slider-controls button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filter_home {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.filter_home:hover {
+  transform: scale(1.1);
+}
+
+.filter_home:hover .d_filter_name,
+.filter_home:hover .m_filter_name {
+  color: #ff0000; /* Change the text color on hover */
+}

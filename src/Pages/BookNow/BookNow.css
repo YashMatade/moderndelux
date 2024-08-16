@@ -1,0 +1,73 @@
+
+
+
+
+@media only screen and (max-width: 768px){
+    .book-now_property{
+
+background: #EFEFEF;
+padding: 2rem;
+border-radius: 10px;
+
+    }
+
+
+    .book_now_box{
+        padding: 10px;
+    }
+
+    
+
+    .form_book_input input{
+        background: transparent;
+    border: 1px solid #B9B9B9;
+    border-radius:7px;
+    height: 40px;
+
+    outline: none;
+    padding: 10px;
+    }
+
+    .form_book_input textarea{
+        background: transparent;
+    border: 1px solid #B9B9B9;
+    border-radius:7px;
+
+    outline: none;
+    padding: 10px;
+    }
+
+.book_now_btn button{
+    background: #FF0000;
+border: none;
+width: 100px;
+height: 30px;
+color: white;
+border-radius: 15px;
+}
+
+    .book_now_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .form_book_input input::placeholder,textarea::placeholder{
+        color: #B9B9B9;
+        font-weight: 200;
+    }
+    .form_book_input{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .form_book_input label{
+        color: #000000        ;
+font-weight: 500;
+font-size: 1rem;
+line-height: 14.63px;
+padding: 10px;
+    }
+}

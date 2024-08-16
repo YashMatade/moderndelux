@@ -1,0 +1,211 @@
+.property-card{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1.5rem;
+}
+
+
+.property-amenities{
+    display: none;
+}
+
+.property-name{
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.property-address{
+    color: #616161;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.property-image{
+    /* max-width: 100%; */
+    width: 100%;
+height: 237.72px;
+object-fit: cover;
+border-radius: 21px;
+
+}
+
+
+.property_more_info{
+    display: flex;
+gap: 2rem;
+}
+
+.property-sex{
+    display: flex;
+    gap: 5px;
+}
+
+
+.property-sex img{
+    width: 25px;
+    object-fit: cover;
+}
+
+
+
+
+
+.property-sex p{
+    color: #616161;
+    font-weight: 400;
+}
+
+.property-sizes{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.interaction_btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.interaction_btns button{
+    background: #EF0000;
+    border-radius: 15px;
+    box-shadow: 0px 1.75px 12.23px 0px #0000001F;
+color: white;
+width: 100%;
+    border: none;
+    font-weight: 500;
+    height: 35px;
+}
+
+.inter_enquire{
+    background: white !important;
+    color: #000000 !important;
+}
+
+@media only screen and (max-width: 768px){
+    .single_amenity{
+        background: #EBEBEB;
+    border-radius: 20px ;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6rem;    
+    }
+
+
+    .property-amenities{
+        display: block;
+    }
+    
+    .single_amenity span{
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    
+    
+    .property{
+        padding:15px;
+    }
+    
+    .property-address{
+        color: #616161;
+        font-weight: 400;
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 18px;
+    }
+    .property-name{
+        text-align: left;
+        font-weight: 700;
+    }
+    
+    
+    
+    .property-sex p{
+        font-size: 1rem;
+        color: #616161;
+    }
+    
+    
+    .property-image{
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    
+    .sex-logo{
+        width: 20px;
+        transform: translateY(-10px);
+    }
+    
+    .property-sex{
+        display: flex;
+        align-items: center;
+    }
+    
+    .property-sizes{
+        display: flex;
+        gap: 5px;
+    }
+    
+    .property-sizes p{
+        line-height: 15px;
+        color: #616161;
+        font-size: 0.9rem;
+    }
+    
+    .property_more_info{
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    
+    .all_amenities{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    
+    .property-amenities h3{
+        font-weight: 400;
+        color: #616161;
+      
+    font-weight: 400;
+    line-height: 12.34px;
+    text-align: left;
+    
+    }
+    
+    
+    .property_top_info{
+        padding: 15px;
+    }
+    
+    .amenity-logo{
+        width: 20px;
+    }
+
+
+    
+
+
+    .property-card{
+      display: flex;
+      flex-direction: column;
+        gap: 1.5rem;
+        }
+
+}

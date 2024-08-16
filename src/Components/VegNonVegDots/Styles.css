@@ -1,0 +1,54 @@
+.symbol-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.symbol {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding-top: 10px;
+  width: 70px;
+}
+
+.symbol.veg {
+  border-color: green;
+  color: green;
+}
+
+.symbol.nonveg {
+  border-color: red;
+  color: red;
+}
+
+.symbol .dot {
+  width: 40px;
+  height: 40px;
+  background-color: currentColor;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.symbol .label {
+  display: block;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-container .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #777;
+}
+
+.text-container .subtitle {
+  font-size: 14px;
+  color: #777;
+}

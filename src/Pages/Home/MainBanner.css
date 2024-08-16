@@ -1,0 +1,69 @@
+
+
+
+.main-banner-container img{
+max-width: 100%;
+}
+
+
+.main-banner-container {
+  position: relative;
+  width: 100%; 
+}
+
+
+
+
+
+.text-content {
+  position: absolute;
+  top: 20%; 
+  left: 10%; 
+  color: white; 
+  padding: 20px; 
+
+}
+
+
+.text-content button {
+  background: linear-gradient(
+    97.64deg,
+    #E90000 -7.32%,
+    #750000 120.12%,
+    rgba(104, 0, 0, 0) 120.13%
+  );
+  border: none;
+  color: white;
+  border-radius: 30px;
+  max-width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-content button:hover {
+  background: linear-gradient(
+    97.64deg,
+    #FF4B4B -7.32%,
+    #AB0000 120.12%,
+    rgba(104, 0, 0, 0) 120.13%
+  );
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+@media only screen and (max-width: 768px){
+  .text-content{
+    width: 80%;
+    margin-top: -2rem;
+  }
+
+  .main-banner-container{
+    margin-bottom: 1.5em;
+  
+    
+  }
+}

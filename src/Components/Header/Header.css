@@ -1,0 +1,139 @@
+.header_menu{
+border-radius: 30px;
+display: flex;
+padding: 0.7em;
+background: #EEEEEE;
+justify-content: space-between;
+width: 100%;
+
+}
+
+
+.header_menu a{
+  text-decoration: none;
+  color: #000000;
+}
+
+._main_contact{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+
+
+
+.navbar_desktop{
+  padding: 1rem;
+  
+}
+  
+.main_logo img{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+
+  @media only screen and (max-width: 768px){
+    .hamburger {
+        position: fixed;
+        /* transform: translate(-50%, -50%); */
+        background: #EFEFEF;
+        
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: flex;
+justify-content: space-between;        
+        width: 95%;
+border-radius: 15px;
+        color:  #616161;
+        font-weight: 500;
+      }
+      
+      .links_nav{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      ._main_contact{
+        margin-top: -0.3rem;
+      }
+
+      .main_logo img{
+        max-width: 80%;
+      }
+
+      .links_nav a{
+        padding: 15px;
+        text-decoration: none;
+        color: #616161;
+        font-weight: bold;
+      }
+      .ham-close{
+        display: flex;
+      }
+      .main_ham{
+        margin-top: 9.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .ham-logo img{
+        max-width: 100%;
+        
+      }
+
+      .navbar_mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: rem;
+      }
+
+      ._main_contact{
+        gap: 1rem;
+        display: flex;
+        transform: translateX(-20px);
+       
+      }
+        }
+
+
+
+        /* Avtuve */
+
+
+
+
+
+
+
+.navbar_desktop .header_menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.navbar_desktop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+.navbar_desktop .header_menu a.active {
+  color: #FF0000
+
+}

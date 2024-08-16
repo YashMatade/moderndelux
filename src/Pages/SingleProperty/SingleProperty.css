@@ -1,0 +1,267 @@
+/* Amenities.css */
+.amenities-container {
+  padding: 5px;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.amenity-item:hover {
+  transform: scale(1.1);
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.amenity-icon {
+  color: red;
+  margin-right: 10px;
+}
+
+.more-item {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  display: inline-block;
+  text-align: left;
+}
+
+.about-property h2 {
+  color: #333;
+}
+.about-property p {
+  color: #666;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.foods-menu-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.foods-menu-container {
+  display: flex;
+  overflow-x: auto;
+  /* padding: 20px; */
+  /* background: linear-gradient(90deg, #f5f5f5, #e0e0e0); */
+  /* border-radius: 15px; */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.food-card {
+  flex: 0 0 auto;
+  width: 240px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.food-card-title {
+  /* font-family: "Playfair Display", serif; */
+  font-weight: 600;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.food-card-slot {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.meal-time {
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: background 0.3s ease;
+}
+
+.meal-time:hover {
+  background: #f0f0f0;
+}
+
+.payment-info-container {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(90deg, #f5f5f5, #e0e0e0);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-info-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.payment-info-section {
+  margin-top: 20px;
+}
+
+.payment-info-label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.payment-info-details {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.pg-details-container {
+  background: linear-gradient(135deg, black, red);
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.pg-details-container:hover {
+  transform: translateY(-5px);
+}
+
+.details-section {
+  margin-bottom: 25px;
+}
+
+.details-title {
+  /* font-family: "Playfair Display", serif; */
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d1c4b2;
+}
+
+.details-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  /* background-color: #b89b6d; */
+  bottom: -3px;
+  left: 0;
+}
+
+.details-content small {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+.details-content b {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+}
+
+.details-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.details-content div b {
+  margin-top: 5px;
+}
+
+.nearby-locations-title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.nearby-locations-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  /* background-color: #b89b6d; */
+  bottom: -5px;
+  left: 0;
+}
+
+.nearby-locations-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #616161;
+  margin-bottom: 20px;
+}
+
+.nearby-location-item {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nearby-location-item:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.nearby-location-item div:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.nearby-location-item div:last-child {
+  font-weight: 700;
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}

@@ -1,0 +1,109 @@
+.searchbar-container{
+  background: rgba(231, 231, 231, 0.8);
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;  margin: 3rem;
+  padding: 2rem;
+  gap: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+.searchbar-container input{
+  width: 100%;
+  border-radius: 50px;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+.searchbar-container select{
+  width: 100%;
+  border-radius: 50px;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  border: none;
+
+}
+
+/* 
+.searchbar-container button{
+  background: #FF0000  ;
+ color:  white;
+ border-radius: 50px;
+ width: 100%;
+ border: none;
+} */
+
+
+.searchbar-container button {
+  background: linear-gradient(135deg, #FF0000 0%, #FF5F6D 100%);
+
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.searchbar-container button:hover {
+  background: linear-gradient(135deg, #FF5F6D 0%, #FF0000 100%);
+
+  transform: translateY(-3px);
+}
+
+.searchbar-container button:active {
+  transform: translateY(1px);
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+
+  /* .searchbar-container{
+    background: rgba(231, 231, 231, 0.8);
+  
+  display: grid;
+  grid-template-columns: 1fr;  
+  margin: 0rem;
+    padding: 1rem;
+    gap: 10px;
+    width: 100%
+  }
+
+   */
+
+
+
+
+
+   .searchbar-container{
+    display: grid;
+margin: 10px;
+    grid-template-columns: 1fr;
+    margin: 0;
+    margin-bottom: 1.5em;
+   }
+  .searchbar-container button{
+    height: 50px;
+  }
+}

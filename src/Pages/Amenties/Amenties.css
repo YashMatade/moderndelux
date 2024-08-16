@@ -1,0 +1,117 @@
+.amenties_banner_container {
+    position: relative;
+  }
+
+
+  .amenties_main{
+    overflow: hidden;
+  }
+
+  .ad_banner_content {
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%);
+    color: white;
+  }
+
+
+
+  .ad_banner_content h4{
+    font-size: 4rem;
+  }
+
+
+  .ad_banner_content button{
+    border: none;
+    height: 44px;
+width: 150px;   
+ border-radius: 20px;
+    background-color: white;
+}
+
+  .ad_banner_content p{
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+
+  .amenitiy h6{
+    color: #616161;
+    font-size: 14px;
+    font-weight: 500;    
+  }
+
+  .amenitiy p{
+    color: #616161;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+
+  .more_ammenties h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+
+  .all_indoor_game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.all_cooking_feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+  .more_ammenties{
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px){
+.ad_banner_content h4{
+    font-size: 1.5rem;
+}
+
+.ad_banner_content button{
+    border: none;
+    height: 44px;
+width: 100px;   
+ border-radius: 20px;
+    background-color: white;
+}
+
+.ad_banner_content p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.all_indoor_game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+
+.all_cooking_feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+    gap: 0;
+    grid-auto-flow: row;
+}
+
+
+/* .all_cooking_feature p{
+    white-space: wrap;
+} */
+  }

@@ -1,0 +1,48 @@
+.frequently-asked-question{
+    text-align: center;
+
+
+}
+
+
+.frequently-asked-question h3{
+    color: #000000;
+    font-weight: 700;
+    line-height: 
+250px;
+    font-size: 10rem;
+}
+
+
+.single_faq p{
+    font-weight: 400;
+    color: #2E2E2E;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.single_faq h6{
+    color: #2E2E2E;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .frequently-asked-question h3{
+        font-size: 8rem;
+        line-height: 
+        200px;
+    }
+
+
+    .single_faq h6{
+        font-size: 1.2rem;
+    }
+
+    .single_faq p{
+        font-size: 14px;
+    }
+}

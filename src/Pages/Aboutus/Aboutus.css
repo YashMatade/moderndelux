@@ -1,0 +1,148 @@
+.single_member img{
+    width: 185px;
+    border-radius: 15px;
+    height: 155px;
+    
+    object-fit: cover;
+}
+
+
+
+.team_title h3{
+    color: #000000;
+    font-size:2rem;
+    margin-left:15px;
+    font-weight:700;
+}
+
+
+.single_member{
+    text-align: center;
+    cursor: pointer;
+}
+
+.content_section h6{
+    color: #2E2E2E;
+    font-size: 1.2rem;
+    font-weight:700 ;
+}
+
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+
+
+
+.content_section p{
+    color:#2E2E2E;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+.about-content h3{
+    text-align: 
+    center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.members_team{
+    padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+
+.content_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content_image_about img{
+max-width: 100%;
+border-radius: 15px;
+}
+
+
+
+.members_team h4{
+    color: #000000;
+    margin-bottom: 0;
+    font-weight:700
+}
+
+.members_team p{
+    color: #000000;
+    font-weight:500 ;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .members_team{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    
+.content_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.team_title h3{
+    font-size: 1.5rem;
+    transform: translateX(20px);
+    
+}
+
+
+
+
+.aboutus_main{
+    overflow: hidden;
+    
+}
+
+
+    .content_section {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+.all_team_Members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 2rem;
+}
+
+
+.single_member h4{
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+}
