@@ -24,7 +24,7 @@ export default property = {
   _id: "66a38b932e44e208e203486e",
   pg_name: "Modern Deluxe PG for Gents",
   pg_type: "Single",
-  pg_images: [one, two, three, four, five, six, seven, eight, nine, ten],
+  pg_images: [four, five, six, seven, eight, nine, ten, one, two, three, eleven, nineteen],
 
   room_amenities: [
     "AC",

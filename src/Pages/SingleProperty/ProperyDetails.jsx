@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import thetreroom from "../../assets/thetreroom.png";
 import { getSinglePG } from "../../Routes/Routes";
 import { useParams } from "react-router-dom";
-import one from "../../assets/001.jpeg";
+import one from "../../assets/019.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
