@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import thetreroom from "../../assets/thetreroom.png";
 import { getSinglePG } from "../../Routes/Routes";
 import { useParams } from "react-router-dom";
-import one from "../../assets/019.jpg";
+import one from "../../assets/001.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -110,13 +110,127 @@ const ProperyDetails = () => {
 
   return (
     <div className="mt-3">
-      <div className="row  text-start ps-3 pe-3">
-        <h1 style={{ fontWeight: "700", fontSize: "30px" }} className="">
-          {pg?.pg_name}
-        </h1>
-        <div style={{ fontWeight: "400", fontSize: "20px" }} className="">
-          {pg?.pg_address}
+      <div className="  text-start ps-3 pe-3">
+        <div className="row">
+          <div className="col-lg-3"></div>
+          <div className="col-lg-6">
+            <h1
+              style={
+                window.innerWidth < 576
+                  ? {
+                      fontWeight: "700",
+                      fontSize: "20px",
+                      padding: "10px 20px",
+                      background: "linear-gradient(135deg, red, black)",
+                      color: "White",
+                      border: "none",
+                      borderRadius: "15px",
+                      cursor: "pointer",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                    }
+                  : {
+                      fontWeight: "700",
+                      fontSize: "40px",
+                      padding: "10px 20px",
+                      background: "linear-gradient(135deg, red, black)",
+                      color: "White",
+                      border: "none",
+                      borderRadius: "15px",
+                      cursor: "pointer",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                    }
+              }
+              className="text-center mb-3 mt-3"
+            >
+              {pg?.pg_name}
+            </h1>
+
+            <div
+              style={
+                window.innerWidth < 576
+                  ? {
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      padding: "8px 16px",
+                      backgroundColor: "red",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "15px",
+                      cursor: "pointer",
+                      textAlign: "center",
+                      marginTop: "10px",
+                    }
+                  : {
+                      fontWeight: "500",
+                      fontSize: "18px",
+                      padding: "8px 16px",
+                      backgroundColor: "red",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "15px",
+                      cursor: "pointer",
+                      textAlign: "center",
+                      marginTop: "10px",
+                    }
+              }
+              className="text-center"
+            >
+              {pg?.pg_address}
+            </div>
+          </div>
+          <div
+            className={
+              window.innerWidth < 576 ? "col-lg-3 text-center" : "col-lg-3"
+            }
+          >
+            <a href="tel:8139991234" style={{ textDecoration: "none" }}>
+              <button
+                className={
+                  window.innerWidth < 576 ? "btn mt-4 text-center" : "btn mt-4"
+                }
+                style={
+                  window.innerWidth < 576
+                    ? {
+                        backgroundColor: "red",
+                        fontSize: "14px",
+                        borderRadius: "20px",
+                        padding: "12px 24px",
+                        fontWeight: "bold",
+                        color: "white",
+                        boxShadow:
+                          "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                        transition: "all 0.3s ease",
+                      }
+                    : {
+                        backgroundColor: "red",
+                        fontSize: "18px",
+                        borderRadius: "20px",
+                        padding: "12px 24px",
+                        fontWeight: "bold",
+                        color: "white",
+                        boxShadow:
+                          "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                        transition: "all 0.3s ease",
+                      }
+                }
+                onMouseOver={(e) => {
+                  e.target.style.transform = "scale(1.05)";
+                  // e.target.style.boxShadow = "0 12px 20px rgba(0, 0, 0, 0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.transform = "scale(1)";
+                  // e.target.style.boxShadow =
+                  //   "0 8px 15px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)";
+                }}
+              >
+                Contact Us: 8139991234
+              </button>
+            </a>
+          </div>
         </div>
+
         <div className="mt-3 col-12 d-flex justify-content-center">
           <img
             src={propertyImage}
@@ -138,41 +252,6 @@ const ProperyDetails = () => {
           />
         </div>
         <div className="row mt-3">
-          {/* {pg?.pg_images?.map((res, index) => (
-            <div key={index} className="col-4 col-lg-3 mt-3">
-              <div
-                onClick={() => handleImageClick(res)}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  src={res}
-                  className="img-fluid w-100 rounded-4"
-                  alt="Property Thumbnail"
-                  style={
-                    window.innerWidth < 576
-                      ? {
-                          objectFit: "cover",
-                          height: "100%",
-                          borderRadius: "20px",
-                          boxShadow:
-                            propertyImage === res
-                              ? "0px 4px 15px rgba(0, 0, 0, 0.3)"
-                              : "none",
-                        }
-                      : {
-                          objectFit: "cover",
-                          height: "150px",
-                          borderRadius: "20px",
-                          boxShadow:
-                            propertyImage === res
-                              ? "0px 4px 15px rgba(0, 0, 0, 0.3)"
-                              : "none",
-                        }
-                  }
-                />
-              </div>
-            </div>
-          ))} */}
           <Slider {...settings}>
             {pg?.pg_images?.map((res, index) => (
               <div key={index} className="px-2">
@@ -207,16 +286,11 @@ const ProperyDetails = () => {
               return (
                 <>
                   <img src={gender?.sex_icon} className="img-fluid" alt="" />
-                  {gender.sex_name}
+                  &nbsp; Single | Double | Triple
                 </>
               );
             })}
           </span>
-          {pg?.size?.map((size) => {
-            return (
-              <span className="ms-3"> |&nbsp;&nbsp; {size.size_name} </span>
-            );
-          })}
         </div>
         <div className="row">
           <div className="text-start" style={{ fontSize: "12px" }}>
@@ -246,7 +320,7 @@ const ProperyDetails = () => {
               {pg?.location_highlights}
             </div>
 
-            <div
+            {/* <div
               className="alert text-start text-dark mt-5 shadow"
               style={{
                 borderRadius: "15px",
@@ -269,7 +343,7 @@ const ProperyDetails = () => {
                 DEPOSIT IS THE SAME AS {pg?.security_deposit?.toUpperCase()}{" "}
                 RENT.
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-lg-4">
@@ -451,7 +525,7 @@ const ProperyDetails = () => {
               ))}
             </div>
           </div>
-          <div className="payment-info-container mb-5">
+          {/* <div className="payment-info-container mb-5">
             <div
               style={{ fontWeight: "600", fontSize: "22px", color: "#616161" }}
             >
@@ -467,24 +541,58 @@ const ProperyDetails = () => {
                 {pg?.maintenance_charges}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="pg-details-container row ms-2 me-2 p-3 mt-3">
+          {/* <div className="pg-details-container row ms-2 me-2 p-3 mt-5">
             <div className="col-lg-6 col-12">
               <div className="details-section">
                 <div className="details-title">Sharing</div>
                 <div className="details-content row mt-3">
                   <div className="col-lg-4 col-6">
                     <small>Type</small>
-                    <b>{pg?.pg_type}</b>
-                  </div>
-                  <div className="col-lg-4 col-6">
-                    <small>Electricity Unit</small>
-                    <b>{pg?.electricity_unit}</b>
+                    <b>Single Sharing</b>
                   </div>
                   <div className="col-lg-4 col-6">
                     <small>Rent</small>
-                    <b>{pg?.rent}</b>
+                    <b>Rs. 23,000 /-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintanece</small>
+                    <b>Rs. 3000 /-</b>
+                  </div>
+                </div>
+              </div>
+              <div className="details-section">
+                <div className="details-title"></div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Type</small>
+                    <b>Double Sharing</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Rent</small>
+                    <b>Rs. 23,000 /-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintanece</small>
+                    <b>Rs. 3000 /-</b>
+                  </div>
+                </div>
+              </div>
+              <div className="details-section">
+                <div className="details-title"></div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Type</small>
+                    <b>Triple Sharing</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Rent</small>
+                    <b>Rs. 23,000 /-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintanece</small>
+                    <b>Rs. 3000 /-</b>
                   </div>
                 </div>
               </div>
@@ -495,16 +603,131 @@ const ProperyDetails = () => {
                 <div className="details-title">Terms</div>
                 <div className="details-content row mt-3">
                   <div className="col-lg-4 col-6">
-                    <small>Deposit</small>
-                    <b>{pg?.security_deposit}</b>
+                    <small>Security Deposit</small>
+                    <b>Rs. 12,000 /-</b>
                   </div>
                   <div className="col-lg-4 col-6">
                     <small>Lock-in Period</small>
-                    <b>{pg?.lockin_period}</b>
+                    <b>3 months</b>
                   </div>
                   <div className="col-lg-4 col-6">
                     <small>Notice Period</small>
-                    <b>{pg?.notice_period}</b>
+                    <b>1 month</b>
+                  </div>
+                </div>
+              </div>
+              <div className="details-section">
+                <div className="details-title"></div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Security Deposit</small>
+                    <b>Rs. 12,000 /-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Lock-in Period</small>
+                    <b>3 months</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Notice Period</small>
+                    <b>1 month</b>
+                  </div>
+                </div>
+              </div>
+              <div className="details-section">
+                <div className="details-title"></div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Security Deposit</small>
+                    <b>Rs. 12,000 /-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Lock-in Period</small>
+                    <b>3 months</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Notice Period</small>
+                    <b>1 month</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <div className="pg-details-container row ms-2 me-2 p-3 mt-5">
+            {/* Single Sharing */}
+            <div className="col-lg-6 col-12">
+              <div className="details-section">
+                <div className="details-title">Single Sharing</div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Rent</small>
+                    <b>Rs. 23,000/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Security Deposit</small>
+                    <b>Rs. 12,000/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintenance</small>
+                    <b>Rs. 3,000/-</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Double Sharing */}
+            <div className="col-lg-6 col-12">
+              <div className="details-section">
+                <div className="details-title">Double Sharing</div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Rent</small>
+                    <b>Rs. 13,000/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Security Deposit</small>
+                    <b>Rs. 6,500/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintenance</small>
+                    <b>Rs. 2,000/-</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Triple Sharing */}
+            <div className="col-lg-6 col-12">
+              <div className="details-section">
+                <div className="details-title">Triple Sharing</div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Rent</small>
+                    <b>Rs. 10,000/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Security Deposit</small>
+                    <b>Rs. 5,000/-</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintenance</small>
+                    <b>Rs. 2,000/-</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Terms (Common for all) */}
+            <div className="col-lg-6 col-12">
+              <div className="details-section">
+                <div className="details-title">Terms</div>
+                <div className="details-content row mt-3">
+                  <div className="col-lg-4 col-6">
+                    <small>Notice Period</small>
+                    <b>1 month</b>
+                  </div>
+                  <div className="col-lg-4 col-6">
+                    <small>Maintenance</small>
+                    <b>One Time</b>
                   </div>
                 </div>
               </div>

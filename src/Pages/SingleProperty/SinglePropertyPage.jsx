@@ -19,7 +19,7 @@ const SinglePropertyPage = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Header />
-      <Search />
+      {/* <Search /> */}
       <ProperyDetails />
       <Footer />
     </div>

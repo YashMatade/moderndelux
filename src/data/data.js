@@ -1,8 +1,8 @@
-import one from "../assets/001.jpeg";
+import one from "../assets/001.jpg";
 import two from "../assets/002.jpg";
 import three from "../assets/003.jpg";
 import four from "../assets/004.jpg";
-import five from "../assets/005.jpeg";
+import five from "../assets/005.jpg";
 import six from "../assets/006.jpg";
 import seven from "../assets/007.jpg";
 import eight from "../assets/008.jpg";
@@ -24,7 +24,7 @@ export default property = {
   _id: "66a38b932e44e208e203486e",
   pg_name: "Modern Deluxe PG for Gents",
   pg_type: "Single",
-  pg_images: [four, five, six, seven, eight, nine, ten, one, two, three, eleven, nineteen],
+  pg_images: [one, two, three, four, five],
 
   room_amenities: [
     "AC",
@@ -129,24 +129,24 @@ export default property = {
   ],
   nearby_location: [
     {
-      place: "Venkat Reddy",
-      distance: "0.3 KM distance",
+      place: "Silk Board",
+      distance: "4.6 KM distance",
       _id: "66acd62bc13d2b77a3f2beaf",
     },
     {
-      place: "Ram Temple",
-      distance: "0.5 KM Distance",
+      place: "Forum Nexus Mall",
+      distance: " 2.8 KM Distance",
       _id: "66acd62bc13d2b77a3f2beb0",
     },
     {
-      place: "Bank ATM",
+      place: "Ram Temple",
       distance: "0.7 KM Distance",
       _id: "66acd62bc13d2b77a3f2beb1",
     },
     {
-      place: "Intermidiate road",
+      place: "Sony Signal",
       distance: "0.5 KM Distance",
-      _id: "66acd62bc13d2b77a3f2beb2",
+      _id: "66acd62bc13d2b77a3f2beb1",
     },
   ],
   maintenance_charges: "250 per year",
